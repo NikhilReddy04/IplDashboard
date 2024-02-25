@@ -1,0 +1,36 @@
+/* Write your CSS here */
+.competing-team-card-image {
+  width: 100px;
+  height: 100px;
+}
+
+.match-card-container {
+  background-color: #0f172a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 10px;
+  margin: 20px;
+  color: #ffffff;
+  min-height: 400px;
+  border-radius: 10px;
+  min-width: 300px;
+  font-family: Bree Serif;
+}
+
+.match-card-result-para {
+  font-size: 14px;
+}
+
+.match-card-result-heading {
+  font-size: 20px;
+}
+
+.won-status {
+  color: #18ed66;
+}
+
+.lost-status {
+  color: #e31a1a;
+}

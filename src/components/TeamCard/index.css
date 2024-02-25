@@ -1,0 +1,44 @@
+/* Write your CSS here */
+.team-card-container {
+  display: flex;
+}
+
+.team-logo {
+  width: 100px;
+  margin-right: 5px;
+}
+
+.team-card-container {
+  background-color: #ffffff33;
+  border: 2px solid #ffffff;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 55%;
+  max-width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 12px;
+  flex-grow: 1;
+}
+
+.team-name-container {
+  text-align: center;
+}
+
+.match-link {
+  text-decoration: none;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 12px;
+  flex-grow: 1;
+}
+
+.team-card-name-para {
+  font-size: 26px;
+}
