@@ -1,4 +1,5 @@
 import './index.css'
+import PropTypes from 'prop-types'
 
 const LatestMatch = props => {
   const {latestMatchDetails} = props
@@ -37,6 +38,22 @@ const LatestMatch = props => {
       </div>
     </div>
   )
+}
+
+LatestMatch.propTypes = {
+  latestMatchDetails: PropTypes.shape({
+    umpires: PropTypes.string,
+    result: PropTypes.string,
+    venue: PropTypes.string,
+    date: PropTypes.string,
+    id: PropTypes.string,
+    man_of_the_match: PropTypes.string,
+    competing_team: PropTypes.string,
+    competing_team_logo: PropTypes.string,
+    first_innings: PropTypes.string,
+    second_innings: PropTypes.string,
+    match_status: PropTypes.string,
+  }).isRequired,
 }
 
 export default LatestMatch
