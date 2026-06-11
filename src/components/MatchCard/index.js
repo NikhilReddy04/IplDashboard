@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import './index.css'
 
 const MatchCard = props => {
@@ -20,6 +21,18 @@ const MatchCard = props => {
       <p className={wonOrLostStatus}>{matchStatus}</p>
     </li>
   )
+}
+
+MatchCard.propTypes = {
+  matchDetails: PropTypes.shape({
+    umpires: PropTypes.string,
+    result: PropTypes.string,
+    id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    man_of_the_match: PropTypes.string,
+    competing_team: PropTypes.string,
+    competing_team_logo: PropTypes.string,
+    match_status: PropTypes.string,
+  }).isRequired,
 }
 
 export default MatchCard
