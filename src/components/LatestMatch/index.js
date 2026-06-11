@@ -3,13 +3,19 @@ import PropTypes from 'prop-types'
 
 const LatestMatch = props => {
   const {latestMatchDetails} = props
-  const {umpires, result, venue, date, id} = latestMatchDetails
-  const manOfTheMatch = latestMatchDetails.man_of_the_match
-  const competingTeam = latestMatchDetails.competing_team
-  const competingTeamLogo = latestMatchDetails.competing_team_logo
-  const firstInnings = latestMatchDetails.first_innings
-  const secondInnings = latestMatchDetails.second_innings
-  const matchStatus = latestMatchDetails.match_status
+  const {
+    umpires,
+    result,
+    venue,
+    date,
+    id,
+    man_of_the_match: manOfTheMatch,
+    competing_team: competingTeam,
+    competing_team_logo: competingTeamLogo,
+    first_innings: firstInnings,
+    second_innings: secondInnings,
+    match_status: matchStatus,
+  } = latestMatchDetails
 
   return (
     <div className="latest-match-main-container">
